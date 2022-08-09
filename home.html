@@ -211,7 +211,6 @@
                                 <div class="col-sm-12 d-flex align-items-center">
                                     <select name="unit" required="" class="form-select text-center">
                                         <option value="Calories">Calories</option>
-                                        <option value="kilojoules">kilojoules</option>
                                     </select>
                                 </div>
                             </div>
@@ -256,37 +255,6 @@
         </ul>
         <div class="tab-content">
             <div id="program1" data-tab-content class="active">
-                <h1 class="tabTitle">Lunch & Dinner</h1>
-                <div class="box">
-                    <div class="imgBx">
-                        <div class="food-container">
-                            <div class="food" data-name="p-1">
-                                <h3>Ground Beef Dish</h3>
-                                <img src="https://i.pinimg.com/originals/46/94/12/469412340484ccdd7ef026ad5d72aeea.jpg"
-                                    width="">
-                                <h4>Ingredients:</h4>
-                                <ul class="foodList">
-                                    <li class="amount">1 lbs</li>
-                                    <li class="ingredients">Ground Beef</li>
-                                    <li class="amount">2 tbsp</li>
-                                    <li class="ingredients">Smoked Paprika</li>
-                                    <li class="amount">2 tbsp</li>
-                                    <li class="ingredients">Ground Oregano</li>
-                                    <li class="amount">1.5 tbsp</li>
-                                    <li class="ingredients">Salt & Pepper</li>
-                                </ul>
-                                <div class="prep">
-                                    <p class="steps">Take ground beef out of packaging. Add spices to your liking. Turn
-                                        heat to high, cook in
-                                        pan until beef is no longer pink. <br></br>Measure
-                                        out 100g on a food scale and serve with 100g of rice and vegtables.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="program2" data-tab-content>
                 <h1 class="tabTitle">Breakfast</h1>
                 <div class="box">
                     <div class="imgBx">
@@ -314,6 +282,37 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="program2" data-tab-content>
+                <h1 class="tabTitle">Lunch & Dinner</h1>
+                <div class="box">
+                    <div class="imgBx">
+                       <div class="food-container">
+                            <div class="food" data-name="p-1">
+                                <h3>Ground Beef Dish</h3>
+                                <img src="https://i.pinimg.com/originals/46/94/12/469412340484ccdd7ef026ad5d72aeea.jpg"
+                                    width="">
+                                <h4>Ingredients:</h4>
+                                <ul class="foodList">
+                                    <li class="amount">1 lbs</li>
+                                    <li class="ingredients">Ground Beef</li>
+                                    <li class="amount">2 tbsp</li>
+                                    <li class="ingredients">Smoked Paprika</li>
+                                    <li class="amount">2 tbsp</li>
+                                    <li class="ingredients">Ground Oregano</li>
+                                    <li class="amount">1.5 tbsp</li>
+                                    <li class="ingredients">Salt & Pepper</li>
+                                </ul>
+                                <div class="prep">
+                                    <p class="steps">Take ground beef out of packaging. Add spices to your liking. Turn
+                                        heat to high, cook in
+                                        pan until beef is no longer pink. <br></br>Measure
+                                        out 100g on a food scale and serve with 100g of rice and vegtables.</p>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -439,7 +438,7 @@
                 ret = (ret * 4.1868);
             }
 
-            document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 class="text-center my-3 text-white fs-4">You should consume <span class="text-info">' + Math.ceil(ret) + ' ' + unit + '/day </span> of calorie to maintain your weight.</h4></div>';
+            document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 class="text-center my-3 text-white fs-4">You should consume <span class="text-info">' + Math.ceil(ret) + ' ' + unit + '/day </span>to maintain your weight.</h4></div>';
         }
 
         function Mifflin(gender, age, bodyFat, height, weight) {
