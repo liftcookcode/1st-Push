@@ -16,28 +16,16 @@ tabs.forEach(tab => {
     });
 });
 
-// ------------------------------------------------------------------------ \\
+// ---------------Hamburger Menu -------------------
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navigation");
 
-// let previewContainer = document.querySelector('.food-previewOne');
-// let previewBox = previewContainer.querySelectorAll('.preview');
+hamburger.addEventListener("click", () =>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 
-
-// document.querySelectorAll('.food-container, .food').forEach(food =>{
-//     food.onclick = () => {
-//         previewContainer.style.display = 'flex';
-//         let name = food.getAttribute('data-name');
-//         previewBox.forEach(preview =>{
-//             let target = food.getAttribute('data-target');
-//             if(name == target){
-//                 preview.classList.add('active');
-//             };
-//         });
-//     };
-// });
-
-// previewBox.forEach(close =>{
-//     close.querySelector('.fa-solid').onclick = () =>{
-//         close.classList.remove('active');
-//         previewContainer.style.display = 'none';
-//     };
-// })
+}));

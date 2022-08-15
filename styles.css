@@ -137,7 +137,21 @@ header.sticky .navigation li a {
 header .navigation li a:hover {
     color: #933D41;
 }
-
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+}
+.hamburger .bar
+{
+    display: block;
+    width: 20px;
+    height:3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #933D41;
+}
 /* --------------------------------------------------------------------------- */
 /*-Info Tab-*/
 /* --------------------------------------------------------------------------- */
@@ -186,7 +200,7 @@ header .navigation li a:hover {
     padding-top: 5px;
 }
 /* --------------------------------------------------------------------------- */
-/*-Weight Lifting Tab-*/
+/*-Programs Tab-*/
 /* --------------------------------------------------------------------------- */
 .programs
 {
@@ -380,14 +394,14 @@ header .navigation li a:hover {
     align-items: center;
     text-align: center;
     margin: 20px;
-    background-image: url("http://drlife.com/wp-content/uploads/2018/04/ThinkstockPhotos-919300626.jpg");
+    /* background-image: url("http://drlife.com/wp-content/uploads/2018/04/ThinkstockPhotos-919300626.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .tabTitle {
     margin: 20px;
-    color: #A9A9A9;
+    color: black;
 
 }
 
@@ -465,42 +479,18 @@ header .navigation li a:hover {
 /* --------------------------------------------------------------------------- */
 /*-About Me Tab-*/
 /* --------------------------------------------------------------------------- */
-.about {
+.about 
+{
     background-image: url("https://i.pinimg.com/originals/7c/b1/86/7cb18679659f791b1191bea97b74dfc0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #D3D3D3;
     height: auto;
-    width: 100%;
-    
+    width: 100%; 
 }
 
-.about .contContainer 
+.about .titleTextAbout 
 {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    filter: opacity(90%);
-    margin: 40px;
-    height: 450px;
-}
-.about .content {
-    display: flex;
-    justify-content: center;
-    background-color: #933D41;
-    
-}
-.about .contContainer .nameText
-{
-    color: whitesmoke;
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    padding-right: 15px;
-   
-}
-
-.about .titleTextAbout {
     color: #933D41;
     font-size: 2em;
     font-weight: 400;
@@ -508,22 +498,103 @@ header .navigation li a:hover {
     border-radius: 50%;
     background-color: whitesmoke;
     padding: 10px;
-
+    margin-bottom: 30px;
 }
-
-.about .content .box {
-    /* width: 300px;
-    padding: 30px; */
+.about .nameText 
+{
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.about .aboutContainer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #933D41;
+    filter: opacity(90%);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+.about .aboutContainer .myInfo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: burlywood;
+    height: 200px;
+    width: 200px;
+}
+.about .aboutContainer .myImage
+{
     display: flex;
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
+    /* background-color: wheat; */
+    margin-left: 40px;
+}
+.about .aboutContainer .myImage img
+{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    border:1px solid black;
+    margin: 20px;
+    
+}
+.about .myText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #933D41;
+    text-align: center;
+    filter: opacity(90%);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.about .myText p
+{
+    border-top: 1px solid black;
+    color: wheat;
+    margin: 50px;
+}
+/* .about .mainContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin:15px
+}
+.about .content {
+    display: flex;
+    justify-content: center;
+    background-color: #933D41;
+    border: 1px solid black;
+    filter: opacity(90%);
+    margin: 40px;
+    height: 350px;
+}
+
+.about .content .box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 10px;
 }
 
-.about .content .box .imgBx {
+.about .content .box .imgBx 
+{
     position: relative;
-    width: 400px;
+    width: 350px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
@@ -542,37 +613,23 @@ header .navigation li a:hover {
     object-fit: cover;
     
 }
-.about .content .box .text {
+.about .content .box .text 
+{
     text-align: center;
     
 }
 
-.about .content .box .text p {
+.about .content .box .text p 
+{
     border-left: 1px solid black;
     color:wheat;
     margin-left: 15px;
+    padding:5px;
 
-}
+} */
 
-.about .disContainer
+.about .contactInfo 
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: #AAAAAA;
-    
-}
-.about .disclaimer {
-    padding: 20px;
-    font-size: 11px;
-    color: white;
-    text-align: center;
-}
-.about .disclaimer span{
-
-}
-.about .contactInfo {
     margin-top: 30px;
     font-size: 25px;
     color: whitesmoke;
@@ -580,7 +637,8 @@ header .navigation li a:hover {
     text-decoration: underline;
 }
 
-.about .email {
+.about .email 
+{
     font-size: 15px;
     color:whitesmoke;
     text-align: center;
@@ -646,9 +704,7 @@ header .navigation li a:hover {
 
 .calorie .card {
     background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2013/01/gray-abstract-pattern-laminate-counterop-texture.jpg");
-    background-color: #06806D;
     border: 5px solid black;
-    border-radius: 20%;
     max-width: 750px;
     margin: 0 auto;
 
@@ -700,7 +756,7 @@ header .navigation li a:hover {
     }
 }
 
-/*-Tablets and under-*/
+/*-Tablets to small computer Screen-*/
 @media(min-width:500px) and (max-width: 768px) {
     header {
         height: 100px;
@@ -772,13 +828,71 @@ header .navigation li a:hover {
     {
         flex-direction: column;
     }
+    .about .content 
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .content .box
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .content .box .imgBx 
+    {
+        justify-content: center;
+        overflow: hidden;
+        border: 1px solid black;
+        margin: 20px;
+    }
+    
+    .about .content .box .imgBx img 
+    {
+        position: relative;
+    }
+    
+    .about .content .box .text 
+    {
+    
+    }
 
 
 }
 
-/*-Mobile-*/
+/*-Tablets-*/
 @media(max-width: 500px) {
 
+    .hamburger {
+            display: block;
+            padding-left: 400px;
+            position: fixed;
+        }
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .navigation {
+            position: fixed;
+            left: -500%;
+            top: 10px;
+            flex-direction: column;
+            background-color: #AAAAAA;
+            width: 500px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .navigation.active {
+            left: 0;
+        }
     .titleText {
         text-align: center;
     }
@@ -796,7 +910,7 @@ header .navigation li a:hover {
     header .navigation li {
         flex-direction: column;
         text-align: center;
-        padding: 0 20px 0 15px;
+        padding: 0 10px 0 10px;
     }
 
     header .navigation li a {
@@ -836,7 +950,8 @@ header .navigation li a:hover {
         flex-direction: column;
     }
 
-    .nutrition .tab-content {
+    .nutrition .tab-content 
+    {
         justify-content: center;
 
     }
@@ -846,6 +961,158 @@ header .navigation li a:hover {
         width: 125px;
         margin: 60px;
     }
-   
+    .about .aboutContainer .myImage 
+    {
+        flex-direction: column;
+    }
 
+}
+
+/*-Mobile-*/
+@media(min-width:360px) and (max-width: 499px)
+{
+    .hamburger {
+            display: block;
+            padding-right: 90px;
+        }
+    
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .navigation {
+            position: fixed;
+            top: 10px;
+            flex-direction: column;
+            background-color: #A9A9A9;
+            width: 500px;
+            text-align: center;
+            transition: 0.3s;
+        }
+    
+        .navigation.active {
+            left: 0;
+        }
+
+    .btn
+    {
+        transition: none;
+    }
+    .btn:hover
+    {
+        letter-spacing: normal;
+    }
+    .btn-calculate
+    {
+        font-size: 10px;
+        
+    }
+    .titleText {
+            text-align: center;
+        }
+    
+        header {
+            height: 100px;
+            flex-direction: column;
+        }
+    
+        header .logo {
+            text-align: center;
+    
+        }
+    
+        header .navigation li {
+            padding:none;
+            text-align: center;
+            padding:5px;
+        }
+    
+        header .navigation li a {
+            font-size: 15px;
+        }
+    
+        .banner .home-info h3 {
+            align-items: center;
+            margin: 20px;
+        }
+    
+        .banner .home-info p {
+            align-items: center;
+        }
+    
+        section .programs {
+            flex-direction: column;
+        }
+    
+        .row .col50 .imgBx img {
+            flex-direction: column;
+        }
+    
+    
+        section .info 
+        {
+            flex-direction: column;
+        }
+    
+        .info .container 
+        {
+            flex-direction: column;
+        }
+    
+        section .nutrition 
+        {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .nutrition .tab-content 
+        {
+            position:relative;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 25px;
+            
+        }
+        .nutrition .tab-content .tabTitle
+        {
+            color:black;
+        }
+        .nutrition .tab-content .food-container 
+        {
+            width: 125px;
+            margin: 20px;
+        }
+
+        section .programs
+        {
+            flex-direction: column;
+        }
+        .programs .backContainer
+        {
+            flex-direction: column;
+        }
+        .programs .Nutrition1 .Nutrition2
+        {
+            margin: 5px;
+        }
+        .about .title .titleTextAbout
+        {
+            text-align: center;
+        }
+        .about .aboutContainer .myImage
+        {
+            flex-direction: column;
+            margin-right: 40px;
+        }
 }

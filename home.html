@@ -23,12 +23,27 @@
     <header>
         <a href="#" class="logo">Lift, Cook, Code.</a>
         <ul class="navigation">
-            <li><a href="#info">Info</a></li>
-            <li><a href="#program">Weight Lifting</a></li>
-            <li><a href="#nutrition">Cooking</a></li>
-            <li><a href="#calorie">Calorie Calculator</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li class="nav-item">
+                <a href="#info" class="nav-link">Info</a>
+            </li>
+            <li class="nav-item">
+                <a href="#program" class="nav-link">Programs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#calorie" class="nav-link">Calorie Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a href="#nutrition" class="nav-link">Cooking</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About Me</a>
+            </li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>             
+        </div>
     </header>
     <!----------------------------------------------------------------------------------------------->
     <!-- Home Page -->
@@ -136,104 +151,104 @@
     <!-- Calorie Calculator -->
 <!----------------------------------------------------------------------------------------------->
 
-    <section class="calorie" id="calorie">
-        <div class="title">
-            <h2 class="titleText">Caloric Maintenence</h2>
-            <p>Below you can find a tool to calculate your caloric maintenance. Knowing your maintenance level is crucial to
-            maintaining, gaining, or losing weight. Input some basic info and get a jump start on your goals!</p>
-        </div>
+<section class="calorie" id="calorie">
+<div class="title">
+    <h2 class="titleText">Caloric Maintenence</h2>
+    <p>Below you can find a tool to calculate your caloric maintenance. Knowing your maintenance level is crucial to
+    maintaining, gaining, or losing weight. Input some basic info and get a jump start on your goals!</p>
+</div>
 
-        <form class="CalculateForm" method="post">
-            <div class="card">
-                <h4 class="calorie-words">Calorie Calculator</h4>
-                <div class="card-body">
-                    <div class="row g-3">
-                        <div class="col-sm-4">
-                            <div>
-                                <h5 class="calorie-words">Age</h5>
-                                <input class="form-control text-center" name="age" required="" type="number"
-                                    value="24" />
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <h5 class="calorie-words">Gender</h5>
-                                <select name="gender" required="" class="form-select text-center">
-                                    <option value="0">Male</option>
-                                    <option value="1">Female</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <h5 class="calorie-words">Body Fat (%)</h5>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-control text-center" name="bodyFat" required="" type="number"
-                                        value="14" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <h5 class="calorie-words">Height (CM)</h5>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-control text-center" name="height" required="" type="number"
-                                        value="189" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <h5 class="calorie-words">Weight (Kg)</h5>
-                                <div class="d-flex align-items-center">
-                                    <input class="form-control text-center" name="weight" required="" type="number"
-                                        value="87" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5 class="calorie-words">Activity</h5>
-                            <select class="form-select text-center" name="activity" required="">
-                                <option value="1">Basal Metabolic Rate (BMR)</option>
-                                <option value="1.2">Sedentary: little or no exercise</option>
-                                <option value="1.375">Light: exercise 1-3 times/week</option>
-                                <option value="1.465">Moderate: exercise 4-5 times/week</option>
-                                <option value="1.55">Active: daily exercise or intense exercise 3-4 times/week</option>
-                                <option selected="" value="1.725">Very Active: intense exercise 6-7 times/week</option>
-                                <option value="1.9">Extra Active: very intense exercise daily, or physical job</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5 class="calorie-words">Result Unit</h5>
-                            <div class="row g-3">
-                                <div class="col-sm-12 d-flex align-items-center">
-                                    <select name="unit" required="" class="form-select text-center">
-                                        <option value="Calories">Calories</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5 class="calorie-words">BMR Formula</h5>
-                            <div class="row g-3">
-                                <div class="col-sm-12 d-flex align-items-center">
-                                    <select name="formula" required="" class="form-select text-center">
-                                        <option value="0">Mifflin St Jeor</option>
-                                        <option value="1">Revised Harris-Benedict</option>
-                                        <option value="2">Katch-McArdle</option>
-                                    </select>
-                                </div>
-                            </div>
+<form class="CalculateForm" method="post">
+    <div class="card">
+        <h4 class="calorie-words">Calorie Calculator</h4>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="calorie-words">Age</h5>
+                        <input class="form-control text-center" name="age" required="" type="number"
+                            value="24" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="calorie-words">Gender</h5>
+                        <select name="gender" required="" class="form-select text-center">
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="calorie-words">Body Fat (%)</h5>
+                        <div class="d-flex align-items-center">
+                            <input class="form-control text-center" name="bodyFat" required="" type="number"
+                                value="14" />
                         </div>
                     </div>
                 </div>
-                <div class="ans_calculate"></div>
-                <div class="text-center mt-4 card-footer">
-                    <button class="btn btn-calculate" onclick="calculateCalorie(this)" type="button">Calculate</button>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="calorie-words">Height (CM)</h5>
+                        <div class="d-flex align-items-center">
+                            <input class="form-control text-center" name="height" required="" type="number"
+                                value="189" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="calorie-words">Weight (Kg)</h5>
+                        <div class="d-flex align-items-center">
+                            <input class="form-control text-center" name="weight" required="" type="number"
+                                value="87" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="calorie-words">Activity</h5>
+                    <select class="form-select text-center" name="activity" required="">
+                        <option value="1">Basal Metabolic Rate (BMR)</option>
+                        <option value="1.2">Sedentary: little or no exercise</option>
+                        <option value="1.375">Light: exercise 1-3 times/week</option>
+                        <option value="1.465">Moderate: exercise 4-5 times/week</option>
+                        <option value="1.55">Active: daily exercise or intense exercise 3-4 times/week</option>
+                        <option selected="" value="1.725">Very Active: intense exercise 6-7 times/week</option>
+                        <option value="1.9">Extra Active: very intense exercise daily, or physical job</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="calorie-words">Result Unit</h5>
+                    <div class="row g-3">
+                        <div class="col-sm-12 d-flex align-items-center">
+                            <select name="unit" required="" class="form-select text-center">
+                                <option value="Calories">Calories</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="calorie-words">BMR Formula</h5>
+                    <div class="row g-3">
+                        <div class="col-sm-12 d-flex align-items-center">
+                            <select name="formula" required="" class="form-select text-center">
+                                <option value="0">Mifflin St Jeor</option>
+                                <option value="1">Revised Harris-Benedict</option>
+                                <option value="2">Katch-McArdle</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
-    </section>
+        </div>
+        <div class="ans_calculate"></div>
+        <div class="text-center mt-4 card-footer">
+            <button class="btn btn-calculate" onclick="calculateCalorie(this)" type="button">Calculate</button>
+        </div>
+    </div>
+</form>
+</section>
 
 
 <!----------------------------------------------------------------------------------------------->
@@ -353,35 +368,24 @@
     <!-- About Me -->
     <!----------------------------------------------------------------------------------------------->
     <section class="about" id="about">
-        <div class="title">
-            <div class="titleTextAbout">About Me</div>
-            <!-- <h3 class="nameText">Andrew Farrell</h3>
-            <h3 class="nameText">Software Engineer</h3> -->
-        </div>
-    <div class="contContainer">
-        <div class="content">
-            <div class="box">
-                    <h5 class="nameText">Andrew Farrell</h5>
-                <div class="imgBx">
-                    <img src="https://previews.dropbox.com/p/thumb/ABmgUtdyRcNQkco7UROQiJOyoqKOI1CA1npZAA0lEnFHR4FHSw1s6iyXyjUSlXCimDrQMkfbWKbaNaZVXzFeTqOEuzzTFPyLP63-4i7OIsiT7aQAtRpMzhVYRXDWyYml6Er1gLLLekbauoLCDW4gSJpn_-ufw6y72yHAaaZrB-0Yf7CI-nrUhasEkmRR7El1MjGnAc1gFh_ude7dm_MA5wmaWMFAkMg1SkJccYlv-mdnocq5ucAHZ3ZyQoVE3Y2vbJOQrKQDB1kdma_PgUcmOXVcHZpDH_R_Yb8Jbpz-ByFoKRemqMm1jxpa-MHmOf_ehyELKVVvbmyUhU8C-hV15OxWzlr2bq2YRMNvpR8-Dm9btRwEQqc-E7t-eKBs9FOVOWw/p.png">
-                </div>
-                <h5 class="nameText">Software Engineer</h5>
-                <div class="text">
-                    <p>I fell in love with computer programming by playing Runescape a 2006 videogame. My brother, who
-                        is a Tech CEO pushed me to find out how games are created. And I've been hooked since.<br></br>
-                        When I'm not coding, I'm powerlifting. My Personal Records(PRs) are a 501lbs Deadlift, a 405lbs
-                        Back Squat, and a 265lbs Bench Press.<br></br>I also enjoy cooking new dishes and shooting
-                        photography, both landscapes and portraits.<br></br></p>
-                </div>
-            </div>
-            
+
+    <div class="title">
+        <div class="titleTextAbout">About Me</div>
+    </div>
+    <div class="aboutContainer">
+        <div class="myImage">
+            <h5 class="nameText">Andrew Farrell</h5>
+            <img src="https://previews.dropbox.com/p/thumb/ABr3Dqm-v-3unU1zFTrxNlPMh7T7j_JQuarotEjZ-feyT61-8MK8YN_-XCPGFOrvs2msT5lZj_IRHUS2lEqdLgeLWeeZfVkMeMqiXTgp0Apq64frQas3VJSJZA48L93vgGiJbTA6ABYtC0TqKlOBH4RmcXxq8tYH-YgjJgSeNvk390uBCz_Ycf47AmsjzjhPxTjZQzvXciWJcuUArEcN8m2RmJ0k_SYLYzs3tbiNl74uEYVzTso5zo16dqlIIIM5t7nc3k6XFop5xJ5FSjCOAJo8LVxxxP1DemAJ2YDfUNi9LZeeyfhiLj3XctFh8PrMncF4KYSarqWoi6GGFh2u_ZKIqWNaCsRtkP1SQV1KWV2phZb5w92dtvS2rgwV3iRuXv8/p.png">
+            <h5 class="nameText">Software Engineer</h5>
         </div>
     </div>
-    <!-- <div class="disContainer">
-        <p class="disclaimer">*Note: I'm not a certified personal trainer or nutritionalist, but I have 10+
-            years experience in powerlifting and 1 year in nutrition. I enjoy helping people reach their health related
-            goals. If you have any questions on how to begin feel free to reach out to me. It will be free of charge!*</p>
-    </div> -->
+    <div class="myText">
+        <p>I fell in love with computer programming by playing Runescape a 2006 videogame. My brother, who
+            is a Tech CEO pushed me to find out how games are created. And I've been hooked since.<br></br>
+            When I'm not coding, I'm powerlifting. My Personal Records(PRs) are a 501lbs Deadlift, a 405lbs
+            Back Squat, and a 265lbs Bench Press.<br></br>I also enjoy cooking new dishes and shooting
+            photography, both landscapes and portraits.<br></br></p>
+    </div>
         <h3 class="contactInfo">Contact Me</h3>
         <h4 class="email">liftcookcode@gmail.com</h4>
         
