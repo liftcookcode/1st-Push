@@ -131,7 +131,7 @@ header .navigation li a {
 }
 
 header.sticky .navigation li a {
-    color: #111;
+    color: black;
 }
 
 header .navigation li a:hover {
@@ -770,7 +770,11 @@ header .navigation li a:hover {
     header .navigation li {
         flex-direction: column;
         text-align: center;
-        margin: 0 0 0 10px;
+        
+    }
+    header .navigation .nav-link
+    {
+        font-size: 13px;
     }
 
     .banner .home-info h3 {
@@ -778,7 +782,7 @@ header .navigation li a:hover {
         margin: 40px;
     }
 
-    .card {
+    .calorie .card {
         flex-direction: column;
 
     }
@@ -828,34 +832,17 @@ header .navigation li a:hover {
     {
         flex-direction: column;
     }
-    .about .content 
+    .nutrition .tab-content .food-container
     {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width:100%;
+        margin-left: 8px;
     }
-    .about .content .box
-    {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about .content .box .imgBx 
-    {
-        justify-content: center;
-        overflow: hidden;
-        border: 1px solid black;
-        margin: 20px;
-    }
+   
+  
     
-    .about .content .box .imgBx img 
-    {
-        position: relative;
-    }
+   
     
-    .about .content .box .text 
-    {
-    
-    }
+   
 
 
 }
@@ -885,13 +872,20 @@ header .navigation li a:hover {
             left: -500%;
             top: 10px;
             flex-direction: column;
-            background-color: #AAAAAA;
+            /* background-color: #010203; */
+            background-image: url("https://tse4.mm.bing.net/th?id=OIP.9yiSbuQ3jPRoGb_KxRglEgHaFj&pid=Api&P=0");
+            background-position: center;
+            background-size: cover;
             width: 500px;
             text-align: center;
             transition: 0.3s;
         }
         .navigation.active {
             left: 0;
+        }
+        .navigation .nav-link
+        {
+            text-align: center;
         }
     .titleText {
         text-align: center;
@@ -915,6 +909,10 @@ header .navigation li a:hover {
 
     header .navigation li a {
         font-size: 15px;
+    }
+    header.sticky .navigation li a
+    {
+        color: whitesmoke;
     }
 
     .banner .home-info h3 {
@@ -964,7 +962,9 @@ header .navigation li a:hover {
     .about .aboutContainer .myImage 
     {
         flex-direction: column;
+        padding-right: 30px;
     }
+    
 
 }
 
@@ -1000,6 +1000,10 @@ header .navigation li a:hover {
     
         .navigation.active {
             left: 0;
+        }
+        header.sticky .navigation li a 
+        {
+            color: whitesmoke;
         }
 
     .btn
@@ -1113,6 +1117,7 @@ header .navigation li a:hover {
         .about .aboutContainer .myImage
         {
             flex-direction: column;
-            margin-right: 40px;
+            margin-right: 10px;
         }
+      
 }
